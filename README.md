@@ -49,16 +49,16 @@ The code is organized as follows:
 * sim_draw_HD_lane_orientation.py: animation of one case for SL, SSL, HL and VH on paper, reader can dirctly run and watch.
 * sim_draw_transparent_lane_orientation.py: visualization of one case for SL, SSL, HL and VH on paper, reader can dirctly run and watch.
 * ./experiment_scripts/train_intersection_HJI.py: contains scripts to train the model, which can reproduce experiments in the paper.
-* ./validation_scripts/closedloop_traj_generation_HD_tanh.py: use value network (tanh as activation function) as closed-loop controllers to generate data including generalization and saftety performance
-* ./validation_scripts/closedloop_traj_generation_HD_relu.py: use value network (relu as activation function) as closed-loop controllers to generate data including generalization and saftety performance
-* ./validation_scripts/closedloop_traj_generation_HD_sine.py: use value network (sine as activation function) as closed-loop controllers to generate data including generalization and saftety performance
-* ./validation_scripts/trajectory_with_value_HD_tanh.py: visualize generalization and saftety performance for value network (tanh as activation function)
-* ./validation_scripts/trajectory_with_value_HD_relu.py: visualize generalization and saftety performance for value network (relu as activation function)
-* ./validation_scripts/trajectory_with_value_HD_sine.py: visualize generalization and saftety performance for value network (sine as activation function)
-* ./validation_scripts/model: experimental model in the paper
-* ./validation_scripts/train_data: training data in the paper
-* ./validation_scripts/test_data: testing data in the paper
-* ./validation_scripts/closed_loop: store data by using value network as closed-loop controllers
+* ./validation_scripts/closedloop_traj_generation_HD_tanh.py: use value network (tanh as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
+* ./validation_scripts/closedloop_traj_generation_HD_relu.py: use value network (relu as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
+* ./validation_scripts/closedloop_traj_generation_HD_sine.py: use value network (sine as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
+* ./validation_scripts/trajectory_with_value_HD_tanh.py: visualize generalization and saftety performance for value network (tanh as activation function).
+* ./validation_scripts/trajectory_with_value_HD_relu.py: visualize generalization and saftety performance for value network (relu as activation function).
+* ./validation_scripts/trajectory_with_value_HD_sine.py: visualize generalization and saftety performance for value network (sine as activation function).
+* ./validation_scripts/model: experimental model in the paper.
+* ./validation_scripts/train_data: training data in the paper.
+* ./validation_scripts/test_data: testing data in the paper.
+* ./validation_scripts/closed_loop: store data by using value network as closed-loop controllers.
 
 ### Uncontrolled_intersection_complete_information_game: train supervised(SL), self-supervised(SSL), hybrid(HL) and value hardening(VH) model to complete generalization and saftety performance test for case 1 with complete information
 The code is organized as follows:
@@ -75,24 +75,24 @@ The code is organized as follows:
 * sim_draw_HD_lane_orientation.py: animation of one case for SL, SSL, HL and VH on paper, reader can dirctly run and watch.
 * sim_draw_transparent_lane_orientation.py: visualization of one case for SL, SSL, HL and VH on paper, reader can dirctly run and watch.
 * ./experiment_scripts/train_intersection_HJI.py: contains scripts to train the model, which can reproduce experiments in the paper.
-* ./validation_scripts/closedloop_traj_generation_HD_tanh.py: use value network (tanh as activation function) as closed-loop controllers to generate data including generalization and saftety performance
-* ./validation_scripts/closedloop_traj_generation_HD_relu.py: use value network (relu as activation function) as closed-loop controllers to generate data including generalization and saftety performance
-* ./validation_scripts/closedloop_traj_generation_HD_sine.py: use value network (sine as activation function) as closed-loop controllers to generate data including generalization and saftety performance
-* ./validation_scripts/closedloop_traj_generation_HD_gelu.py: use value network (gelu as activation function) as closed-loop controllers to generate data including generalization and saftety performance
-* ./validation_scripts/trajectory_with_value_HD_tanh.py: visualize generalization and saftety performance for value network (tanh as activation function)
-* ./validation_scripts/trajectory_with_value_HD_relu.py: visualize generalization and saftety performance for value network (relu as activation function)
-* ./validation_scripts/trajectory_with_value_HD_sine.py: visualize generalization and saftety performance for value network (sine as activation function)
-* ./validation_scripts/trajectory_with_value_HD_gelu.py: visualize generalization and saftety performance for value network (gelu as activation function)
+* ./validation_scripts/closedloop_traj_generation_HD_tanh.py: use value network (tanh as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
+* ./validation_scripts/closedloop_traj_generation_HD_relu.py: use value network (relu as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
+* ./validation_scripts/closedloop_traj_generation_HD_sine.py: use value network (sine as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
+* ./validation_scripts/closedloop_traj_generation_HD_gelu.py: use value network (gelu as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
+* ./validation_scripts/trajectory_with_value_HD_tanh.py: visualize generalization and saftety performance for value network (tanh as activation function).
+* ./validation_scripts/trajectory_with_value_HD_relu.py: visualize generalization and saftety performance for value network (relu as activation function).
+* ./validation_scripts/trajectory_with_value_HD_sine.py: visualize generalization and saftety performance for value network (sine as activation function).
+* ./validation_scripts/trajectory_with_value_HD_gelu.py: visualize generalization and saftety performance for value network (gelu as activation function).
 * ./validation_scripts/value_generation_tanh.py: measure the MAEs of value and control input predictions across the test trajectories.
 * ./validation_scripts/action_compute_tanh_initial state.py: present measure the MAEs of control input prediction for initial state space.
 * ./validation_scripts/action_compute_tanh_expanded state.py: present measure the MAEs of control input prediction for expanded state space.
 * ./validation_scripts/value_compute_tanh_initial state.py: present measure the MAEs of value prediction for initial state space.
 * ./validation_scripts/value_compute_tanh_expanded state.py: present measure the MAEs of value prediction for expanded state space.
-* ./validation_scripts/model: experimental model in the paper
-* ./validation_scripts/train_data: training data in the paper
-* ./validation_scripts/test_data: testing data in the paper
-* ./validation_scripts/closed_loop: store data by using value network as closed-loop controllers
-* ./validation_scripts/closed_loop: store data to measure MAE of value and control input predictions
+* ./validation_scripts/model: experimental model in the paper.
+* ./validation_scripts/train_data: training data in the paper.
+* ./validation_scripts/test_data: testing data in the paper.
+* ./validation_scripts/closed_loop: store data by using value network as closed-loop controllers.
+* ./validation_scripts/closed_loop: store data to measure MAE of value and control input predictions.
 
 ### Uncontrolled_intersection_complete_information_game: use supervised(SL) and hybrid(HL) model to complete incomplete information games for case 1
 The code is organized as follows:
@@ -106,7 +106,7 @@ The code is organized as follows:
 * utils.py: contains utility functions.
 * diff_operators.py: contains implementations of differential operators.
 * ./experiment/store the data of simulation.
-* ./validation_scripts/model: experimental model in the paper
+* ./validation_scripts/model: experimental model in the paper.
 * ./validation_scripts/Hamilton_generation.py: use value network to predict the state in the simulation.
 * ./validation_scripts/trajectory_policy_consistent.py: plot two-player trajectories projected into d1-d2 frame when players' initla belief is consistent with their true parameter. 
 * ./validation_scripts/trajectory_policy_consistent.py: plot two-player trajectories projected into d1-d2 frame when players' initla belief is not consistent with their true parameter. 
