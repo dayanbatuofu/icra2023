@@ -17,6 +17,7 @@ conda env create -f environment.yml
 conda activate siren
 ```
 For BVP_generation
+```
 conda env create -f environment.yml
 conda activate hji
 ```
