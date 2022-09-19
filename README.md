@@ -94,7 +94,7 @@ The code is organized as follows:
 * ./validation_scripts/closed_loop: store data by using value network as closed-loop controllers
 * ./validation_scripts/closed_loop: store data to measure MAE of value and control input predictions
 
-### Uncontrolled_intersection_complete_information_game: use supervised(SL) and hybrid(HL) to complete incomplete information games for case 1
+### Uncontrolled_intersection_complete_information_game: use supervised(SL) and hybrid(HL) model to complete incomplete information games for case 1
 The code is organized as follows:
 * main.py: run the simulatio with initial setting including agent's belief, empathetic or non-empathetic.
 * enviroment.py: simulation environment is generated here, using the parameters from main.py.
