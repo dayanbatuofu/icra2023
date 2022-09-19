@@ -11,6 +11,7 @@ This is the implementation of the paper "Approximating-Discontinuous-Nash-Equili
 
 ## Get started
 There exists two different environment, you can set up a conda environment with all dependencies like so:
+
 For Collision_avoidance, Uncontrolled_intersection_complete_information_game and Uncontrolled_intersection_incomplete_information_game
 ```
 conda env create -f environment.yml
