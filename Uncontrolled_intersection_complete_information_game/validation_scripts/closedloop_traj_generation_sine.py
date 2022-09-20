@@ -179,9 +179,9 @@ if __name__ == '__main__':
     else:
         alpha = 10
 
-    ckpt_path = './model/hybrid_' + str(policy[N_choice]) + '_sine.pth'
-    # ckpt_path = './model/supervised_' + str(policy[N_choice]) + '_sine.pth'
-    # ckpt_path = './model/selfsupervised_' + str(policy[N_choice]) + '_sine.pth'
+    ckpt_path = './model/sine/hybrid_' + str(policy[N_choice]) + '_sine.pth'
+    # ckpt_path = './model/sine/supervised_' + str(policy[N_choice]) + '_sine.pth'
+    # ckpt_path = './model/sine/selfsupervised_' + str(policy[N_choice]) + '_sine.pth'
     activation = 'sine'
 
     # Initialize and load the model
