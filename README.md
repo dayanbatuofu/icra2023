@@ -76,7 +76,7 @@ The code is organized as follows:
 * ./experiment_scripts/toy_case.py: contains scripts to train the model, which can reproduce experiments in the paper.
 * ./validation_scripts/toy_case_value_plot.py: use this script to plot Fig 1(a) in the paper. 
 * ./validation_scripts/toy_case_value_hardening_plots.py: use this script to plot Fig 1(b) in the paper. 
-* 
+
 ### Uncontrolled_intersection_complete_information_game: train supervised(SL), self-supervised(SSL), hybrid(HL) and value hardening(VH) model to complete generalization and saftety performance test for case 1 with complete information
 The code is organized as follows:
 * dataio.py: load training data for SL, SSL, HL and VH.
