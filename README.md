@@ -12,7 +12,7 @@ This is the implementation of the paper "Approximating-Discontinuous-Nash-Equili
 ## Get started
 There exists two different environment, you can set up a conda environment with all dependencies like so:
 
-For Collision_avoidance, Uncontrolled_intersection_complete_information_game and Uncontrolled_intersection_incomplete_information_game
+For Toy Case, Collision_avoidance, Uncontrolled_intersection_complete_information_game and Uncontrolled_intersection_incomplete_information_game
 ```
 conda env create -f environment.yml
 conda activate siren
@@ -24,7 +24,7 @@ conda activate hji
 ```
 
 ## Code structure
-There are four folders with different functions
+There are five folders with different functions
 ### BVP_generation: use standard BVP solver to collect the Nash equilibrial (NE) values for uncontrolled intersection (case 1) and collision avoidance (case 2) 
 The code is organized as follows:
 * generate_intersection.py: generate 5D NE values under four player type configurations (a, a), (na, a), (a, na), and (na, na) for case 1.
