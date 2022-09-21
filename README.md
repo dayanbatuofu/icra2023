@@ -49,7 +49,7 @@ The code is organized as follows:
 * diff_operators.py: contains implementations of differential operators.
 * sim_draw_HD_lane_orientation.py: animation of one case for SL, SSL, HL and VH on paper, reader can dirctly run and watch.
 * sim_draw_transparent_lane_orientation.py: visualization of one case for SL, SSL, HL and VH on paper, reader can dirctly run and watch.
-* ./experiment_scripts/train_intersection_HJI.py: contains scripts to train the model, which can reproduce experiments in the paper.
+* ./experiment_scripts/train_collision_HJI.py: contains scripts to train the model, which can reproduce experiments in the paper.
 * ./validation_scripts/closedloop_traj_generation_HD_tanh.py: use value network (tanh as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
 * ./validation_scripts/closedloop_traj_generation_HD_relu.py: use value network (relu as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
 * ./validation_scripts/closedloop_traj_generation_HD_sine.py: use value network (sine as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
@@ -61,6 +61,22 @@ The code is organized as follows:
 * ./validation_scripts/test_data: testing data in the paper.
 * ./validation_scripts/closed_loop: store data by using value network as closed-loop controllers, reader needs to create it manually.
 
+### Toy Case: train supervised(SL), self-supervised(SSL), hybrid(HL) and value hardening(VH) model to visualize the toy case shown in the paper
+The code is organized as follows:
+* dataio.py: load training data for SL, SSL, HL and VH.
+* training_supervised.py: contains SL training routine.
+* training_selfsupervised.py: contains SSL training routine.
+* training_hybrid.py: contains HL training routine.
+* training_supervised.py: contains SL training routine.
+* training_valuehardening.py: contains VH training routine.
+* loss_functions.py: contains loss functions for SL, SSL, HL and VH.
+* modules.py: contains layers and full neural network modules.
+* utils.py: contains utility functions.
+* diff_operators.py: contains implementations of differential operators.
+* ./experiment_scripts/toy_case.py: contains scripts to train the model, which can reproduce experiments in the paper.
+* ./validation_scripts/toy_case_value_plot.py: use this script to plot Fig 1(a) in the paper. 
+* ./validation_scripts/toy_case_value_hardening_plots.py: use this script to plot Fig 1(b) in the paper. 
+* 
 ### Uncontrolled_intersection_complete_information_game: train supervised(SL), self-supervised(SSL), hybrid(HL) and value hardening(VH) model to complete generalization and saftety performance test for case 1 with complete information
 The code is organized as follows:
 * dataio.py: load training data for SL, SSL, HL and VH.
