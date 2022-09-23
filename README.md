@@ -47,8 +47,8 @@ The code is organized as follows:
 * modules.py: contains layers and full neural network modules.
 * utils.py: contains utility functions.
 * diff_operators.py: contains implementations of differential operators.
-* sim_draw_HD_lane_orientation.py: animation of one case for SL, SSL, HL and VH on paper, reader can dirctly run and watch.
-* sim_draw_transparent_lane_orientation.py: visualization of one case for SL, SSL, HL and VH on paper, reader can dirctly run and watch.
+* sim_draw_HD_lane_orientation.py: animation of one case for SL, SSL, HL and VH on paper, reader can dirctly run and watch. Reader needs to create folder `image_recodring` manually.
+* sim_draw_transparent_lane_orientation.py: visualization of one case for SL, SSL, HL and VH on paper, reader can dirctly run and watch. Reader needs to create folder `image_recodring` manually.
 * ./experiment_scripts/train_collision_HJI.py: contains scripts to train the model, which can reproduce experiments in the paper.
 * ./validation_scripts/closedloop_traj_generation_HD_tanh.py: use value network (tanh as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
 * ./validation_scripts/closedloop_traj_generation_HD_relu.py: use value network (relu as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
