@@ -191,8 +191,7 @@ if __name__ == '__main__':
     ckpt_path = './model/relu/model_hybrid_HD_relu.pth'
     # ckpt_path = './model/relu/model_supervised_HD_relu.pth'
     # ckpt_path = './model/relu/model_selfsupervised_HD_relu.pth'
-    # ckpt_path = './model/relu/model_valuehardening_HD_relu.pth'
-    activation = 'tanh'
+    activation = 'relu'
 
     # Initialize and load the model
     model = modules.SingleBVPNet(in_features=9, out_features=1, type=activation, mode='mlp',
@@ -297,6 +296,5 @@ if __name__ == '__main__':
         save_path = 'closed_loop/relu/closedloop_traj_hybrid_HD_relu.mat'
         # save_path = 'closed_loop/relu/closedloop_traj_supervised_HD_relu.mat'
         # save_path = 'closed_loop/relu/closedloop_traj_selfsupervised_HD_relu.mat'
-        # save_path = 'closed_loop/relu/closedloop_traj_valuehardening_HD_relu.mat'
         scio.savemat(save_path, final_data)
 
