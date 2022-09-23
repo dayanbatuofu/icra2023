@@ -189,7 +189,6 @@ if __name__ == '__main__':
     ckpt_path = './model/sine/model_hybrid_HD_sine.pth'
     # ckpt_path = './model/sine/model_supervised_HD_sine.pth'
     # ckpt_path = './model/sine/model_selfsupervised_HD_sine.pth'
-    # ckpt_path = './model/sine/model_valuehardening_HD_sine.pth'
     activation = 'sine'
 
     # Initialize and load the model
@@ -295,6 +294,5 @@ if __name__ == '__main__':
         save_path = 'closed_loop/sine/closedloop_traj_hybrid_HD_sine.mat'
         # save_path = 'closed_loop/sine/closedloop_traj_supervised_HD_sine.mat'
         # save_path = 'closed_loop/sine/closedloop_traj_selfsupervised_HD_sine.mat'
-        # save_path = 'closed_loop/sine/closedloop_traj_valuehardening_HD_sine.mat'
         scio.savemat(save_path, final_data)
 

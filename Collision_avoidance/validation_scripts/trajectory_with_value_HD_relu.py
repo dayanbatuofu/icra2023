@@ -20,16 +20,13 @@ def pointInRect(points):
 #________________________________________________________________________________________
 
 if bvpAA is True:
-    # file = 'test_data/data_test_HD_600_no collision.mat'
     # file = 'closed_loop/relu/closedloop_traj_selfsupervised_HD_relu.mat'
-    file = 'closed_loop/relu/closedloop_traj_valuehardening_HD_relu.mat'
     # file = 'closed_loop/relu/closedloop_traj_supervised_HD_relu.mat'
-    # file = 'closed_loop/relu/closedloop_traj_hybrid_HD_relu.mat'
+    file = 'closed_loop/relu/closedloop_traj_hybrid_HD_relu.mat'
     index = 2
     # title = 'Self-supervised'
-    title = 'Value hardening'
     # title = 'Supervised'
-    # title = 'Hybrid'
+    title = 'Hybrid'
     special = 0
 
 #____________________________________________________________________________________________________
