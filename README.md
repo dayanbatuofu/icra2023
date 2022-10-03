@@ -7,7 +7,7 @@ Zhe Xu,
 Yi Ren<br>
 Arizona State University
 
-This is the implementation of the paper "Approximating-Discontinuous-Nash-Equilibrial-Values-of-Two-Player-General-Sum-Differential-Games".
+This is the implementation of the paper <a href="https://arxiv.org/abs/2207.01773"> "Approximating-Discontinuous-Nash-Equilibrial-Values-of-Two-Player-General-Sum-Differential-Games"</a>
 
 ## Get started
 There exists two different environment, you can set up a conda environment with all dependencies like so:
