@@ -300,8 +300,8 @@ def initialize_intersection_HJI_hyrid(dataset, Weight, Theta, alpha):
         loss_instant2 = beta * sigmoid21 * sigmoid22
 
         # calculate instantaneous loss
-        loss_fun_1 = u1 ** 2 + loss_instant1
-        loss_fun_2 = u2 ** 2 + loss_instant2
+        loss_fun_1 = alpha * (u1 ** 2 + loss_instant1)
+        loss_fun_2 = alpha * (u2 ** 2 + loss_instant2)
 
         # calculate hamiltonian, H = lambda^T * (-f) + L because we invert the time
         ham_1 = -lam11_1.squeeze() * v11.squeeze() - lam11_2.squeeze() * u1.squeeze() - \
