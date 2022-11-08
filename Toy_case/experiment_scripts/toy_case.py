@@ -120,7 +120,7 @@ if Supervised == True:
                    epochs_til_checkpoint=opt.epochs_til_ckpt, model_dir=root_path,
                    loss_fn=loss_fn_supervised, clip_grad=opt.clip_grad,
                    use_lbfgs=opt.use_lbfgs, validation_fn=None, start_epoch=opt.checkpoint_toload,
-                   pretrain=True, pretrain_iters=opt.num_epochs)
+                   pretrain=False, pretrain_iters=opt.num_epochs)
 
 if Hybrid == True:
     supervised_dataset = dataio.Sup_1D(seed=opt.seed)
