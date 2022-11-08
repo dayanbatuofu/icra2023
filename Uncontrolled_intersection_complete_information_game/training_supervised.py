@@ -71,75 +71,65 @@ def train(model, train_dataloader, epochs, lr, steps_til_summary,
                 if validation_fn is not None:
                     validation_fn(model, checkpoints_dir, epoch)
 
-            if pretrain:
-                # supervised learning
-                for step, (model_input, gt) in enumerate(train_dataloader):
-                    start_time = time.time()
+            # supervised learning
+            for step, (model_input, gt) in enumerate(train_dataloader):
+                start_time = time.time()
 
-                    model_input = {key: value.to(device) for key, value in model_input.items()}
-                    gt = {key: value.to(device) for key, value in gt.items()}
+                model_input = {key: value.to(device) for key, value in model_input.items()}
+                gt = {key: value.to(device) for key, value in gt.items()}
 
-                    if double_precision:
-                        model_input = {key: value.double() for key, value in model_input.items()}
-                        gt = {key: value.double() for key, value in gt.items()}
+                if double_precision:
+                    model_input = {key: value.double() for key, value in model_input.items()}
+                    gt = {key: value.double() for key, value in gt.items()}
 
-                    if use_lbfgs:
-                        def closure():
-                            optim.zero_grad()
-                            model_output = model(model_input)
-                            losses = loss_fn(model_output, gt)
-                            train_loss = 0.
-                            for loss_name, loss in losses.items():
-                                train_loss += loss.mean()
-                            train_loss.backward()
-                            return train_loss
-                        optim.step(closure)
-
-                    model_output = model(model_input)
-
-                    losses = loss_fn(model_output, gt)
-
-                    # import ipdb; ipdb.set_trace()
-
-                    train_loss = 0.
-                    for loss_name, loss in losses.items():
-                        single_loss = loss.mean()
-
-                        if loss_schedules is not None and loss_name in loss_schedules:
-                            writer.add_scalar(loss_name + "_weight", loss_schedules[loss_name](total_steps), total_steps)
-                            single_loss *= loss_schedules[loss_name](total_steps)
-
-                        writer.add_scalar(loss_name, single_loss, total_steps)
-                        train_loss += single_loss
-
-                    train_losses.append(train_loss.item())
-                    writer.add_scalar("total_train_loss", train_loss, total_steps)
-
-                    if not total_steps % steps_til_summary:
-                        torch.save(model.state_dict(),
-                                   os.path.join(checkpoints_dir, 'model_current.pth'))
-                        # summary_fn(model, model_input, gt, model_output, writer, total_steps)
-
-                    if not use_lbfgs:
+                if use_lbfgs:
+                    def closure():
                         optim.zero_grad()
+                        model_output = model(model_input)
+                        losses = loss_fn(model_output, gt)
+                        train_loss = 0.
+                        for loss_name, loss in losses.items():
+                            train_loss += loss.mean()
                         train_loss.backward()
+                        return train_loss
+                    optim.step(closure)
 
-                        if clip_grad:
-                            if isinstance(clip_grad, bool):
-                                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.)
-                            else:
-                                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=clip_grad)
+                model_output = model(model_input)
 
-                        optim.step()
+                losses = loss_fn(model_output, gt)
 
-            else:
-                # hybrid learning
-                pass
+                # import ipdb; ipdb.set_trace()
 
-            if pretrain:
-                pretrain_counter += 1
-            if pretrain and pretrain_counter == pretrain_iters:
-                pretrain = False
+                train_loss = 0.
+                for loss_name, loss in losses.items():
+                    single_loss = loss.mean()
+
+                    if loss_schedules is not None and loss_name in loss_schedules:
+                        writer.add_scalar(loss_name + "_weight", loss_schedules[loss_name](total_steps), total_steps)
+                        single_loss *= loss_schedules[loss_name](total_steps)
+
+                    writer.add_scalar(loss_name, single_loss, total_steps)
+                    train_loss += single_loss
+
+                train_losses.append(train_loss.item())
+                writer.add_scalar("total_train_loss", train_loss, total_steps)
+
+                if not total_steps % steps_til_summary:
+                    torch.save(model.state_dict(),
+                               os.path.join(checkpoints_dir, 'model_current.pth'))
+                    # summary_fn(model, model_input, gt, model_output, writer, total_steps)
+
+                if not use_lbfgs:
+                    optim.zero_grad()
+                    train_loss.backward()
+
+                    if clip_grad:
+                        if isinstance(clip_grad, bool):
+                            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.)
+                        else:
+                            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=clip_grad)
+
+                    optim.step()
 
             pbar.update(1)
 
