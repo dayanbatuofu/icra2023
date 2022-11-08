@@ -177,7 +177,7 @@ if Supervised == True:
                    epochs_til_checkpoint=opt.epochs_til_ckpt, model_dir=root_path,
                    loss_fn=loss_fn_supervised, clip_grad=opt.clip_grad,
                    use_lbfgs=opt.use_lbfgs, validation_fn=None, start_epoch=opt.checkpoint_toload,
-                   pretrain=True, pretrain_iters=opt.pretrain_iters)
+                   pretrain=False, pretrain_iters=opt.pretrain_iters)
 
 if Hybrid == True:
     Hybrid_use = True
