@@ -33,7 +33,7 @@ The code is organized as follows:
 * ./example/vehicle/problem_def_intersection.py: dynamic, PMP equation setting for case 1.
 * ./example/vehicle/problem_def_collision_avoidance.py: dynamic, PMP equation setting for case 2.
 
-run `generate_intersection.py` or `generate_collision_avoidance.py` to collect NE values. Please notice there is four player types in case 1. You should give setting in `generate_intersection.py`. Data size can be set in `./example/vehicle/problem_def_intersection.py` or ./example/vehicle/problem_def_collision_avoidance.py.
+run `generate_intersection.py` or `generate_collision_avoidance.py` to collect NE values. Please notice there is four player types in case 1. You should give setting in `generate_intersection.py`. Data size can be set in `./example/vehicle/problem_def_intersection.py` or `./example/vehicle/problem_def_collision_avoidance.py`.
 
 ### Collision_avoidance: train supervised(SL), self-supervised(SSL), hybrid(HL) and value hardening(VH) model to complete generalization and saftety performance test for case 2
 The code is organized as follows:
