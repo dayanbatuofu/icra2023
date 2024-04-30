@@ -26,54 +26,54 @@ def pointInRect(bl, tr, points):
 #________________________________________________________________________________________
 
 if bvpAA is True:
-    # file = 'test_data/data_test_a_a_600_18.mat'
+    file = 'test_data/data_test_a_a_600.mat'
     # file = 'closed_loop/tanh/closedloop_traj_selfsupervised_initial_a_a_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_supervised_initial_a_a_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_hybrid_initial_a_a_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_valuehardening_initial_a_a_tanh.mat'
-    # file = 'test_data/data_test_a_a_500_18.mat'
+    # file = 'test_data/data_test_a_a_500.mat'
     # file = 'closed_loop/tanh/closedloop_traj_selfsupervised_expanded_a_a_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_supervised_expanded_a_a_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_hybrid_expanded_a_a_tanh.mat'
-    file = 'closed_loop/tanh/closedloop_traj_valuehardening_expanded_a_a_tanh.mat'
+    # file = 'closed_loop/tanh/closedloop_traj_valuehardening_expanded_a_a_tanh.mat'
     index = 2
-    # title = 'GT $\Theta^{*}=(a,a)$'
+    title = 'GT $\Theta^{*}=(a,a)$'
     # title = 'Self-supervised $\Theta^{*}=(a,a)$'
     # title = 'Supervised $\Theta^{*}=(a,a)$'
     # title = 'Hybrid $\Theta^{*}=(a,a)$'
-    title = 'Value hardening $\Theta^{*}=(a,a)$'
+    # title = 'Value hardening $\Theta^{*}=(a,a)$'
     special = 0
     theta1 = 1
     theta2 = 1
 
 if bvpANA is True:
-    # file = 'test_data/data_test_a_na_600_18.mat'
+    # file = 'test_data/data_test_a_na_600.mat'
     # file = 'closed_loop/tanh/closedloop_traj_selfsupervised_initial_a_na_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_supervised_initial_a_na_tanh.mat'
-    # file = 'closed_loop/tanh/closedloop_traj_hybrid_initial_a_na_tanh.mat'
+    file = 'closed_loop/tanh/closedloop_traj_hybrid_initial_a_na_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_valuehardening_initial_a_na_tanh.mat'
-    # file = 'test_data/data_test_a_na_500_18.mat'
+    # file = 'test_data/data_test_a_na_500.mat'
     # file = 'closed_loop/tanh/closedloop_traj_selfsupervised_expanded_a_na_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_supervised_expanded_a_na_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_hybrid_expanded_a_na_tanh.mat'
-    file = 'closed_loop/tanh/closedloop_traj_valuehardening_expanded_a_na_tanh.mat'
+    # file = 'closed_loop/tanh/closedloop_traj_valuehardening_expanded_a_na_tanh.mat'
     index = 2
     # title = 'GT $\Theta^{*}=(a,na)$'
     # title = 'Self-supervised $\Theta^{*}=(a,na)$'
     # title = 'Supervised $\Theta^{*}=(a,na)$'
-    # title = 'Hybrid $\Theta^{*}=(a,na)$'
-    title = 'Value hardening $\Theta^{*}=(a,na)$'
+    title = 'Hybrid $\Theta^{*}=(a,na)$'
+    # title = 'Value hardening $\Theta^{*}=(a,na)$'
     special = 0
     theta1 = 1
     theta2 = 5
 
 if bvpNAA is True:
-    # file = 'test_data/data_test_na_a_600_18.mat'
+    # file = 'test_data/data_test_na_a_600.mat'
     # file = 'closed_loop/tanh/closedloop_traj_selfsupervised_initial_na_a_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_supervised_initial_na_a_tanh.mat'
-    # file = 'closed_loop/tanh/closedloop_traj_hybrid_initial_na_a_tanh.mat'
-    file = 'closed_loop/tanh/closedloop_traj_valuehardening_initial_na_a_tanh.mat'
-    # file = 'test_data/data_test_na_a_500_18.mat'
+    file = 'closed_loop/tanh/closedloop_traj_hybrid_initial_na_a_tanh.mat'
+    # file = 'closed_loop/tanh/closedloop_traj_valuehardening_initial_na_a_tanh.mat'
+    # file = 'test_data/data_test_na_a_500.mat'
     # file = 'closed_loop/tanh/closedloop_traj_selfsupervised_expanded_na_a_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_supervised_expanded_na_a_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_hybrid_expanded_na_a_tanh.mat'
@@ -82,19 +82,19 @@ if bvpNAA is True:
     # title = 'GT $\Theta^{*}=(na,a)$'
     # title = 'Self-supervised $\Theta^{*}=(na,a)$'
     # title = 'Supervised $\Theta^{*}=(na,a)$'
-    # title = 'Hybrid $\Theta^{*}=(na,a)$'
-    title = 'Value hardening $\Theta^{*}=(na,a)$'
+    title = 'Hybrid $\Theta^{*}=(na,a)$'
+    # title = 'Value hardening $\Theta^{*}=(na,a)$'
     special = 0
     theta1 = 5
     theta2 = 1
 
 if bvpNANA is True:
-    # file = 'test_data/data_test_na_na_600_18.mat'
+    # file = 'test_data/data_test_na_na_600.mat'
     # file = 'closed_loop/tanh/closedloop_traj_selfsupervised_initial_na_na_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_supervised_initial_na_na_tanh.mat'
-    # file = 'closed_loop/tanh/closedloop_traj_hybrid_initial_na_na_tanh.mat'
-    file = 'closed_loop/tanh/closedloop_traj_valuehardening_initial_na_na_tanh.mat'
-    # file = 'test_data/data_test_na_na_500_18.mat'
+    file = 'closed_loop/tanh/closedloop_traj_hybrid_initial_na_na_tanh.mat'
+    # file = 'closed_loop/tanh/closedloop_traj_valuehardening_initial_na_na_tanh.mat'
+    # file = 'test_data/data_test_na_na_500.mat'
     # file = 'closed_loop/tanh/closedloop_traj_selfsupervised_expanded_na_na_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_supervised_expanded_na_na_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_hybrid_expanded_na_na_tanh.mat'
@@ -103,8 +103,8 @@ if bvpNANA is True:
     # title = 'GT $\Theta^{*}=(na,na)$'
     # title = 'Self-supervised $\Theta^{*}=(na,na)$'
     # title = 'Supervised $\Theta^{*}=(na,na)$'
-    # title = 'Hybrid $\Theta^{*}=(na,na)$'
-    title = 'Value hardening $\Theta^{*}=(na,na)$'
+    title = 'Hybrid $\Theta^{*}=(na,na)$'
+    # title = 'Value hardening $\Theta^{*}=(na,na)$'
     special = 0
     theta1 = 5
     theta2 = 5

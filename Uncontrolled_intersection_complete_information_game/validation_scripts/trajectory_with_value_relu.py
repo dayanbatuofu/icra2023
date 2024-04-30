@@ -28,10 +28,10 @@ def pointInRect(bl, tr, points):
 if bvpAA is True:
     # file = 'closed_loop/relu/closedloop_traj_selfsupervised_initial_a_a_relu.mat'
     # file = 'closed_loop/relu/closedloop_traj_supervised_initial_a_a_relu.mat'
-    # file = 'closed_loop/relu/closedloop_traj_hybrid_initial_a_a_relu.mat'
+    file = 'closed_loop/relu/closedloop_traj_hybrid_initial_a_a_relu.mat'
     # file = 'closed_loop/relu/closedloop_traj_selfsupervised_expanded_a_a_relu.mat'
     # file = 'closed_loop/relu/closedloop_traj_supervised_expanded_a_a_relu.mat'
-    file = 'closed_loop/relu/closedloop_traj_hybrid_expanded_a_a_relu.mat'
+    # file = 'closed_loop/relu/closedloop_traj_hybrid_expanded_a_a_relu.mat'
     index = 2
     # title = 'Self-supervised $\Theta^{*}=(a,a)$'
     # title = 'Supervised $\Theta^{*}=(a,a)$'
@@ -58,10 +58,10 @@ if bvpANA is True:
 if bvpNAA is True:
     # file = 'closed_loop/relu/closedloop_traj_selfsupervised_initial_na_a_relu.mat'
     # file = 'closed_loop/relu/closedloop_traj_supervised_initial_na_a_relu.mat'
-    # file = 'closed_loop/relu/closedloop_traj_hybrid_initial_na_a_relu.mat'
+    file = 'closed_loop/relu/closedloop_traj_hybrid_initial_na_a_relu.mat'
     # file = 'closed_loop/relu/closedloop_traj_selfsupervised_expanded_na_a_relu.mat'
     # file = 'closed_loop/relu/closedloop_traj_supervised_expanded_na_a_relu.mat'
-    file = 'closed_loop/relu/closedloop_traj_hybrid_expanded_na_a_relu.mat'
+    # file = 'closed_loop/relu/closedloop_traj_hybrid_expanded_na_a_relu.mat'
     index = 2
     # title = 'Self-supervised $\Theta^{*}=(na,a)$'
     # title = 'Supervised $\Theta^{*}=(na,a)$'
@@ -73,10 +73,10 @@ if bvpNAA is True:
 if bvpNANA is True:
     # file = 'closed_loop/relu/closedloop_traj_selfsupervised_initial_na_na_relu.mat'
     # file = 'closed_loop/relu/closedloop_traj_supervised_initial_na_na_relu.mat'
-    # file = 'closed_loop/relu/closedloop_traj_hybrid_initial_na_na_relu.mat'
+    file = 'closed_loop/relu/closedloop_traj_hybrid_initial_na_na_relu.mat'
     # file = 'closed_loop/relu/closedloop_traj_selfsupervised_expanded_na_na_relu.mat'
     # file = 'closed_loop/relu/closedloop_traj_supervised_expanded_na_na_relu.mat'
-    file = 'closed_loop/relu/closedloop_traj_hybrid_expanded_na_na_relu.mat'
+    # file = 'closed_loop/relu/closedloop_traj_hybrid_expanded_na_na_relu.mat'
     index = 2
     # title = 'Self-supervised $\Theta^{*}=(na,na)$'
     # title = 'Supervised $\Theta^{*}=(na,na)$'

@@ -96,24 +96,24 @@ class IntersectionHJI_Supervised(Dataset):
         current_dir = os.path.dirname(os.path.abspath(__file__))
         if not Hybrid_use:
             if N_choice == 0:
-                data_path1 = current_dir + '/validation_scripts/train_data/data_train_a_a_18_1200.mat'
+                data_path1 = current_dir + '/validation_scripts/train_data/data_train_a_a_1200.mat'
             if N_choice == 1:
-                data_path1 = current_dir + '/validation_scripts/train_data/data_train_a_na_18_1200.mat'
+                data_path1 = current_dir + '/validation_scripts/train_data/data_train_a_na_1200.mat'
             if N_choice == 2:
-                data_path1 = current_dir + '/validation_scripts/train_data/data_train_na_a_18_1200.mat'
+                data_path1 = current_dir + '/validation_scripts/train_data/data_train_na_a_1200.mat'
             if N_choice == 3:
-                data_path1 = current_dir + '/validation_scripts/train_data/data_train_na_na_18_1200.mat'
+                data_path1 = current_dir + '/validation_scripts/train_data/data_train_na_na_1200.mat'
             train_data1 = scipy.io.loadmat(data_path1)
             self.train_data1 = train_data1
         else:
             if N_choice == 0:
-                data_path1 = current_dir + '/validation_scripts/train_data/data_train_a_a_18_500.mat'
+                data_path1 = current_dir + '/validation_scripts/train_data/data_train_a_a_500.mat'
             if N_choice == 1:
-                data_path1 = current_dir + '/validation_scripts/train_data/data_train_a_na_18_500.mat'
+                data_path1 = current_dir + '/validation_scripts/train_data/data_train_a_na_500.mat'
             if N_choice == 2:
-                data_path1 = current_dir + '/validation_scripts/train_data/data_train_na_a_18_500.mat'
+                data_path1 = current_dir + '/validation_scripts/train_data/data_train_na_a_500.mat'
             if N_choice == 3:
-                data_path1 = current_dir + '/validation_scripts/train_data/data_train_na_na_18_500.mat'
+                data_path1 = current_dir + '/validation_scripts/train_data/data_train_na_na_500.mat'
             train_data1 = scipy.io.loadmat(data_path1)
             self.train_data1 = train_data1
 
@@ -203,13 +203,13 @@ class IntersectionHJI_Hybrid(Dataset):
 
         current_dir = os.path.dirname(os.path.abspath(__file__))
         if N_choice == 0:
-            data_path1 = current_dir + '/validation_scripts/train_data/data_train_a_a_18_500.mat'
+            data_path1 = current_dir + '/validation_scripts/train_data/data_train_a_a_500.mat'
         if N_choice == 1:
-            data_path1 = current_dir + '/validation_scripts/train_data/data_train_a_na_18_500.mat'
+            data_path1 = current_dir + '/validation_scripts/train_data/data_train_a_na_500.mat'
         if N_choice == 2:
-            data_path1 = current_dir + '/validation_scripts/train_data/data_train_na_a_18_500.mat'
+            data_path1 = current_dir + '/validation_scripts/train_data/data_train_na_a_500.mat'
         if N_choice == 3:
-            data_path1 = current_dir + '/validation_scripts/train_data/data_train_na_na_18_500.mat'
+            data_path1 = current_dir + '/validation_scripts/train_data/data_train_na_na_500.mat'
         train_data1 = scipy.io.loadmat(data_path1)
         self.train_data1 = train_data1
 

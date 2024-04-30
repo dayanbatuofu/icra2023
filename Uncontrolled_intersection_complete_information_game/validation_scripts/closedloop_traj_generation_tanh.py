@@ -179,10 +179,10 @@ if __name__ == '__main__':
     else:
         alpha = 10
 
-    # ckpt_path = './model/tanh/model_hybrid_' + str(policy[N_choice]) + '_tanh.pth'
+    ckpt_path = './model/tanh/model_hybrid_' + str(policy[N_choice]) + '_tanh.pth'
     # ckpt_path = './model/tanh/model_supervised_' + str(policy[N_choice]) + '_tanh.pth'
     # ckpt_path = './model/tanh/model_selfsupervised_' + str(policy[N_choice]) + '_tanh.pth'
-    ckpt_path = './model/tanh/model_valuehardening_' + str(policy[N_choice]) + '_tanh.pth'
+    # ckpt_path = './model/tanh/model_valuehardening_' + str(policy[N_choice]) + '_tanh.pth'
     activation = 'tanh'
 
     # Initialize and load the model
@@ -198,10 +198,10 @@ if __name__ == '__main__':
     model.eval()
 
     "initial state space including 600 trajectories"
-    # path = './test_data/data_test_' + str(policy[N_choice]) + '_600_18.mat'
+    path = './test_data/data_test_' + str(policy[N_choice]) + '_600.mat'
 
     "expanded state space including 500 trajectories"
-    path = './test_data/data_test_' + str(policy[N_choice]) + '_500_18.mat'
+    # path = './test_data/data_test_' + str(policy[N_choice]) + '_500.mat'
     test_data = scio.loadmat(path)
 
     t = test_data['t']
