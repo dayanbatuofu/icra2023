@@ -21,8 +21,8 @@ def pointInRect(points):
 
 if bvpAA is True:
     # file = 'test_data/data_test_HD_600_no collision.mat'
-    # file = 'closed_loop/tanh/closedloop_traj_selfsupervised_HD_tanh.mat'
-    file = 'closed_loop/tanh/closedloop_traj_valuehardening_HD_tanh.mat'
+    file = 'closed_loop/tanh/closedloop_traj_selfsupervised_HD_tanh.mat'
+    # file = 'closed_loop/tanh/closedloop_traj_valuehardening_HD_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_supervised_HD_tanh.mat'
     # file = 'closed_loop/tanh/closedloop_traj_hybrid_HD_tanh.mat'
     index = 2
