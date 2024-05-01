@@ -53,7 +53,7 @@ The code is organized as follows:
 * ./validation_scripts/closedloop_traj_generation_HD_tanh.py: use value network (tanh as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
 * ./validation_scripts/closedloop_traj_generation_HD_relu.py: use value network (relu as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
 * ./validation_scripts/closedloop_traj_generation_HD_sine.py: use value network (sine as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
-* ./validation_scripts/trajectory_with_value_HD_tanh.py: visualize generalization and saftety performance for value network (tanh as activation function), data used for paper is ready
+* ./validation_scripts/trajectory_with_value_HD_tanh.py: visualize generalization and saftety performance for value network (tanh as activation function), data used for paper is ready.
 * ./validation_scripts/trajectory_with_value_HD_relu.py: visualize generalization and saftety performance for value network (relu as activation function).
 * ./validation_scripts/trajectory_with_value_HD_sine.py: visualize generalization and saftety performance for value network (sine as activation function).
 * ./validation_scripts/model: experimental model in the paper.
@@ -96,19 +96,19 @@ The code is organized as follows:
 * ./validation_scripts/closedloop_traj_generation_HD_relu.py: use value network (relu as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
 * ./validation_scripts/closedloop_traj_generation_HD_sine.py: use value network (sine as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
 * ./validation_scripts/closedloop_traj_generation_HD_gelu.py: use value network (gelu as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
-* ./validation_scripts/trajectory_with_value_HD_tanh.py: visualize generalization and saftety performance for value network (tanh as activation function), data used for paper is ready
-* ./validation_scripts/trajectory_with_value_HD_relu.py: visualize generalization and saftety performance for value network (relu as activation function), data used for paper is ready
-* ./validation_scripts/trajectory_with_value_HD_sine.py: visualize generalization and saftety performance for value network (sine as activation function), data used for paper is ready
+* ./validation_scripts/trajectory_with_value_HD_tanh.py: visualize generalization and saftety performance for value network (tanh as activation function), data used for paper is ready.
+* ./validation_scripts/trajectory_with_value_HD_relu.py: visualize generalization and saftety performance for value network (relu as activation function), data used for paper is ready.
+* ./validation_scripts/trajectory_with_value_HD_sine.py: visualize generalization and saftety performance for value network (sine as activation function), data used for paper is ready.
 * ./validation_scripts/trajectory_with_value_HD_gelu.py: visualize generalization and saftety performance for value network (gelu as activation function).
-* ./validation_scripts/action_compute_tanh_initial state.py: present measure the MAEs of control input prediction for initial state space, data used for paper is ready
+* ./validation_scripts/action_compute_tanh_initial state.py: present measure the MAEs of control input prediction for initial state space, data used for paper is ready.
 * ./validation_scripts/action_compute_tanh_expanded state.py: present measure the MAEs of control input prediction for expanded state space, data used for paper is ready
-* ./validation_scripts/value_compute_tanh_initial state.py: present measure the MAEs of value prediction for initial state space, data used for paper is ready
-* ./validation_scripts/value_compute_tanh_expanded state.py: present measure the MAEs of value prediction for expanded state space, data used for paper is ready
+* ./validation_scripts/value_compute_tanh_initial state.py: present measure the MAEs of value prediction for initial state space, data used for paper is ready.
+* ./validation_scripts/value_compute_tanh_expanded state.py: present measure the MAEs of value prediction for expanded state space, data used for paper is ready.
 * ./validation_scripts/model: experimental model in the paper.
 * ./validation_scripts/train_data: training data in the paper.
 * ./validation_scripts/test_data: testing data in the paper.
-* ./validation_scripts/closed_loop: store data by using value network as closed-loop controllers, data used for paper is ready
-* ./validation_scripts/value: store data to measure MAE of value and control input predictions, data used for paper is ready
+* ./validation_scripts/closed_loop: store data by using value network as closed-loop controllers, data used for paper is ready.
+* ./validation_scripts/value: store data to measure MAE of value and control input predictions, data used for paper is ready.
 
 ### Uncontrolled_intersection_complete_information_game: use supervised(SL) and hybrid(HL) model to complete incomplete information games for case 1
 The code is organized as follows:
@@ -124,8 +124,8 @@ The code is organized as follows:
 * ./experiment/store the data of simulation.
 * ./validation_scripts/model: experimental model in the paper.
 * ./validation_scripts/Hamilton_generation.py: use value network to predict the state in the simulation.
-* ./validation_scripts/trajectory_policy_consistent.py: plot two-player trajectories projected into d1-d2 frame when players' initla belief is consistent with their true parameter, data used for paper is ready 
-* ./validation_scripts/trajectory_policy_consistent.py: plot two-player trajectories projected into d1-d2 frame when players' initla belief is not consistent with their true parameter, data used for paper is ready 
+* ./validation_scripts/trajectory_policy_consistent.py: plot two-player trajectories projected into d1-d2 frame when players' initla belief is consistent with their true parameter, data used for paper is ready. 
+* ./validation_scripts/trajectory_policy_consistent.py: plot two-player trajectories projected into d1-d2 frame when players' initla belief is not consistent with their true parameter, data used for paper is ready. 
 
 ## Contact
 If you have any questions, please feel free to email the authors.
