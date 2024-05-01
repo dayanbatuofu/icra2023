@@ -53,13 +53,13 @@ The code is organized as follows:
 * ./validation_scripts/closedloop_traj_generation_HD_tanh.py: use value network (tanh as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
 * ./validation_scripts/closedloop_traj_generation_HD_relu.py: use value network (relu as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
 * ./validation_scripts/closedloop_traj_generation_HD_sine.py: use value network (sine as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
-* ./validation_scripts/trajectory_with_value_HD_tanh.py: visualize generalization and saftety performance for value network (tanh as activation function).
+* ./validation_scripts/trajectory_with_value_HD_tanh.py: visualize generalization and saftety performance for value network (tanh as activation function), data used for paper is ready
 * ./validation_scripts/trajectory_with_value_HD_relu.py: visualize generalization and saftety performance for value network (relu as activation function).
 * ./validation_scripts/trajectory_with_value_HD_sine.py: visualize generalization and saftety performance for value network (sine as activation function).
 * ./validation_scripts/model: experimental model in the paper.
 * ./validation_scripts/train_data: training data in the paper.
 * ./validation_scripts/test_data: testing data in the paper.
-* ./validation_scripts/closed_loop: store data by using value network as closed-loop controllers, reader needs to create it manually.
+* ./validation_scripts/closed_loop: store data by using value network as closed-loop controllers, data used for paper is ready.
 
 ### Toy Case: train supervised(SL), self-supervised(SSL), hybrid(HL) and value hardening(VH) model to visualize the toy case shown in the paper
 The code is organized as follows:
