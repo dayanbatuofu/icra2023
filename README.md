@@ -92,10 +92,10 @@ The code is organized as follows:
 * sim_draw_HD_lane_orientation.py: animation of one case for SL, SSL, HL and VH on paper, reader can dirctly run and watch.
 * sim_draw_transparent_lane_orientation.py: visualization of one case for SL, SSL, HL and VH on paper, reader can dirctly run and watch.
 * ./experiment_scripts/train_intersection_HJI.py: contains scripts to train the model, which can reproduce experiments in the paper.
-* ./validation_scripts/closedloop_traj_generation_HD_tanh.py: use value network (tanh as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
-* ./validation_scripts/closedloop_traj_generation_HD_relu.py: use value network (relu as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
-* ./validation_scripts/closedloop_traj_generation_HD_sine.py: use value network (sine as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
-* ./validation_scripts/closedloop_traj_generation_HD_gelu.py: use value network (gelu as activation function) as closed-loop controllers to generate data including generalization and saftety performance.
+* ./validation_scripts/closedloop_traj_generation_HD_tanh.py: use value network (tanh as activation function) as closed-loop controllers to generate data for saftety performance.
+* ./validation_scripts/closedloop_traj_generation_HD_relu.py: use value network (relu as activation function) as closed-loop controllers to generate data for saftety performance.
+* ./validation_scripts/closedloop_traj_generation_HD_sine.py: use value network (sine as activation function) as closed-loop controllers to generate data for saftety performance.
+* ./validation_scripts/closedloop_traj_generation_HD_gelu.py: use value network (gelu as activation function) as closed-loop controllers to generate data for saftety performance.
 * ./validation_scripts/trajectory_with_value_HD_tanh.py: visualize generalization and saftety performance for value network (tanh as activation function), data used for paper is ready.
 * ./validation_scripts/trajectory_with_value_HD_relu.py: visualize generalization and saftety performance for value network (relu as activation function), data used for paper is ready.
 * ./validation_scripts/trajectory_with_value_HD_sine.py: visualize generalization and saftety performance for value network (sine as activation function), data used for paper is ready.
